@@ -14,8 +14,17 @@ Este portfólio é uma página web simples criada para mostrar meus projetos, ha
 ## Estrutura de Diretórios
 
 - `index.html`: Página inicial do portfólio.
-- `style.css`: Arquivos de folha de estilo (CSS).
-- `imagem.png`: Minha foto para o portfólio.
+- `about.html`: Página "Sobre mim" do portfólio.
+- `styles`
+  - `style.css`: Arquivos de folha de estilo (CSS).
+- `assets`
+  - `Imagem.png`: Minha foto para o portfólio.
+  - `github.png`: Ícone do GitHub.
+  - `instagram.png`: Ícone do Instagram.
+  - `linkedin.png`: Ícone do LinkedIn.
+  - `twitch.png`: Ícone da Twitch.
+  - `twitter.png`: Ícone do Twitter.
+  - `twitter-novo.png`: Ícone novo do Twitter.
 
 ## Como Executar
 
