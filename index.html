@@ -9,37 +9,75 @@
 </head>
 
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-        </nav>
-    </header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível<strong 
-            class="titulo-destaque"> com um Front-end de qualidade!
-            </strong></h1>
-            <p class="apresentacao__conteudo__texto">Olá! Sou Ana Paula Berigo, desenvolvedora
-            Front-end com especialidade em Reactjs, React Native, JavaScript, Angular, HTML5, Styled Components e CSS3. Vamos
-            conversar?</p>
-            <div class="apresentacao__links">
-                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
-                <a class="apresentacao__links__navegacao" href="https://github.com/AnaBerigo">
-                <img src="assets/github.png" alt="Ícone do GitHub">
-                    GitHub
-                </a>
-                <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/anaberigo/">
-                    <img src="assets/linkedin.png" alt="Ícone do LinkedIn">
-                    LinkedIn
-                </a>
-            </div>
-        </section>
-        <img class="apresentacao__imagem" src="assets/Imagem.png" alt="Foto da Ana Paula Berigo">
-    </main>
-    <footer class="rodape">
-        Desenvolvido por Ana Berigo.
-    </footer>
+    <div class="container">
+        <!-- <span class="star"></span> -->
+        <header class="cabecalho">
+            <nav class="cabecalho__menu">
+                <a class="cabecalho__menu__link" href="index.html">Home</a>
+                <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            </nav>
+        </header>
+        <main class="apresentacao">
+            <section class="apresentacao__conteudo">
+                <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível<strong 
+                class="titulo-destaque"> com um Front-end de qualidade!
+                </strong></h1>
+                <p class="apresentacao__conteudo__texto">Olá! Sou Ana Paula Berigo, desenvolvedora
+                Front-end com especialidade em Reactjs, React Native, JavaScript, Angular, HTML5, Styled Components e CSS3. Vamos
+                conversar?</p>
+                <div class="apresentacao__links">
+                    <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
+                    <a class="apresentacao__links__navegacao" href="https://github.com/AnaBerigo">
+                    <img src="assets/github.png" alt="Ícone do GitHub">
+                        GitHub
+                    </a>
+                    <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/anaberigo/">
+                        <img src="assets/linkedin.png" alt="Ícone do LinkedIn">
+                        LinkedIn
+                    </a>
+                </div>
+            </section>
+            <img class="apresentacao__imagem" src="assets/Imagem.png" alt="Foto da Ana Paula Berigo">
+        </main>
+        <footer class="rodape">
+            Desenvolvido por Ana Berigo.
+        </footer>
+    </div>
+
+    <script>
+        // Define o número de estrelas
+        const numberOfStars = 100;
+
+        // Função para gerar um número aleatório entre min e max
+        function getRandom(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        // Seleciona o container para adicionar as estrelas
+        const container = document.querySelector('.container');
+
+        for (let i = 0; i < numberOfStars; i++) {
+            // Cria um novo elemento span
+            const star = document.createElement('span');
+            star.classList.add('star');
+
+            // Define uma posição aleatória
+            const xPos = getRandom(0, window.innerWidth);
+            const yPos = getRandom(0, window.innerHeight);
+
+            // Define a posição
+            star.style.left = `${xPos}px`;
+            star.style.top = `${yPos}px`;
+
+            // Define uma duração de animação aleatória entre 5s e 15s
+            const animationDuration = getRandom(5, 15);
+            star.style.animationDuration = `${animationDuration}s`;
+
+            // Adiciona a estrela ao container
+            container.appendChild(star);
+        }
+    </script>
+    
 </body>
 
 </html>
