@@ -18,10 +18,12 @@
 
 body {
   background: linear-gradient(
-    360deg,
-    var(--cor-degrade-fundo-primeira),
-    var(--cor-degrade-fundo-segunda)
-  );
+      360deg,
+      var(--cor-degrade-fundo-primeira),
+      var(--cor-degrade-fundo-segunda)
+    )
+    no-repeat;
+  background-size: cover;
   color: var(--cor-secundaria);
   overflow-x: hidden;
 }
@@ -33,7 +35,7 @@ body {
 }
 
 .star {
-  position: absolute;
+  position: fixed;
   border-radius: 50%;
   background-color: var(--cor-secundaria);
   width: 3px;
@@ -138,7 +140,7 @@ body {
 
 .rodape {
   background-color: var(--cor-terciaria);
-  color: var(--cor-primaria);
+  color: var(--cor-degrade-fundo-segunda);
   padding: 24px;
   font-family: var(--fonte-secundaria);
   font-size: 1.5rem;

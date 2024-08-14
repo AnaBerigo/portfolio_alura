@@ -7,40 +7,76 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-        </nav>
-    </header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
-            <p class="apresentacao__conteudo__texto">
-                Graduada em Ciência da Computação pelo Centro Universitário de Formiga, Técnica em Informática pelo SENAI Euvaldo Lodi e Técnica em Redes pelo SENAC/MG. Atualmente, sou Analista de Desenvolvimento na Aditek, onde acumulei experiência significativa em HTML5, CSS3, JavaScript, React.js, Angular, Flutter, React Native, Bootstrap, MySQL e Figma. Meu interesse se estende ao Desenvolvimento de Games, Mobile e Design de Interfaces.
-            </p>
+    <div class="container">
+        <header class="cabecalho">
+            <nav class="cabecalho__menu">
+                <a class="cabecalho__menu__link" href="index.html">Home</a>
+                <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            </nav>
+        </header>
+        <main class="apresentacao">
+            <section class="apresentacao__conteudo">
+                <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
+                <p class="apresentacao__conteudo__texto">
+                    Graduada em Ciência da Computação pelo Centro Universitário de Formiga, Técnica em Informática pelo SENAI Euvaldo Lodi e Técnica em Redes pelo SENAC/MG. Atualmente, sou Analista de Desenvolvimento na Aditek, onde acumulei experiência significativa em HTML5, CSS3, JavaScript, React.js, Angular, Flutter, React Native, Bootstrap, MySQL e Figma. Meu interesse se estende ao Desenvolvimento de Games, Mobile e Design de Interfaces.
+                </p>
+    
+                <p class="apresentacao__conteudo__texto">
+                    Minha jornada profissional tem sido marcada pelo desejo constante de melhorar e facilitar a vida das pessoas, inovando e trazendo qualidade ao cotidiano de indivíduos em todo o mundo. Cada dia é uma oportunidade para expandir minha base de conhecimento e alcançar meus objetivos.
+                </p>
+                
+                <p class="apresentacao__conteudo__texto">
+                    Além do desenvolvimento, tenho um forte interesse em criar soluções que impactem positivamente a experiência do usuário, sempre buscando aprimorar minhas habilidades em design e usabilidade. Minha abordagem é sempre hands on, focada em entregar resultados práticos e eficazes.
+                </p>
+    
+                <p class="apresentacao__conteudo__texto">
+                    Estou comprometida com a inovação e a excelência, dedicando-me a projetos que não apenas atendem às necessidades dos usuários, mas que também superam suas expectativas. Apaixonada por tecnologia e desenvolvimento, procuro sempre unir propósito e resultado em todas as minhas iniciativas.
+                </p>
+    
+                <p class="apresentacao__conteudo__texto">
+                    Acredito no poder transformador da tecnologia e estou sempre em busca de novas oportunidades para aprender, crescer e contribuir para um futuro melhor.
+                </p>
+                
+            </section>
+            <img src="./assets/Imagem.png" alt="Foto da Ana Paula Berigo">
+        </main>
+        <footer class="rodape">
+            Desenvolvido por Ana Berigo.
+        </footer>
+    </div>
+    
+    <script>
+        // Define o número de estrelas
+        const numberOfStars = 200;
 
-            <p class="apresentacao__conteudo__texto">
-                Minha jornada profissional tem sido marcada pelo desejo constante de melhorar e facilitar a vida das pessoas, inovando e trazendo qualidade ao cotidiano de indivíduos em todo o mundo. Cada dia é uma oportunidade para expandir minha base de conhecimento e alcançar meus objetivos.
-            </p>
-            
-            <p class="apresentacao__conteudo__texto">
-                Além do desenvolvimento, tenho um forte interesse em criar soluções que impactem positivamente a experiência do usuário, sempre buscando aprimorar minhas habilidades em design e usabilidade. Minha abordagem é sempre hands on, focada em entregar resultados práticos e eficazes.
-            </p>
+        // Função para gerar um número aleatório entre min e max
+        function getRandom(min, max) {
+            return Math.random() * (max - min) + min;
+        }
 
-            <p class="apresentacao__conteudo__texto">
-                Estou comprometida com a inovação e a excelência, dedicando-me a projetos que não apenas atendem às necessidades dos usuários, mas que também superam suas expectativas. Apaixonada por tecnologia e desenvolvimento, procuro sempre unir propósito e resultado em todas as minhas iniciativas.
-            </p>
+        // Seleciona o container para adicionar as estrelas
+        const container = document.querySelector('.container');
 
-            <p class="apresentacao__conteudo__texto">
-                Acredito no poder transformador da tecnologia e estou sempre em busca de novas oportunidades para aprender, crescer e contribuir para um futuro melhor.
-            </p>
-            
-        </section>
-        <img src="./assets/Imagem.png" alt="Foto da Ana Paula Berigo">
-    </main>
-    <footer class="rodape">
-        Desenvolvido por Ana Berigo.
-    </footer>
+        for (let i = 0; i < numberOfStars; i++) {
+            // Cria um novo elemento span
+            const star = document.createElement('span');
+            star.classList.add('star');
+
+            // Define uma posição aleatória
+            const xPos = getRandom(0, window.innerWidth);
+            const yPos = getRandom(0, window.innerHeight);
+
+            // Define a posição
+            star.style.left = `${xPos}px`;
+            star.style.top = `${yPos}px`;
+
+            // Define uma duração de animação aleatória entre 5s e 15s
+            const animationDuration = getRandom(5, 15);
+            star.style.animationDuration = `${animationDuration}s`;
+
+            // Adiciona a estrela ao container
+            container.appendChild(star);
+        }
+    </script>
 </body>
 </html>
