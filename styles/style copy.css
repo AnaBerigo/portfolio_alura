@@ -14,18 +14,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   background: linear-gradient(
-      var(--cor-degrade-fundo-segunda),
-      var(--cor-degrade-fundo-primeira)
-    )
-    no-repeat;
-  display: flex;
+    var(--cor-degrade-fundo-segunda),
+    var(--cor-degrade-fundo-primeira)
+  );
   color: var(--cor-secundaria);
-  flex-direction: column;
-  gap: 3rem;
 }
 
 .cabecalho {
@@ -40,4 +37,9 @@ body {
 .cabecalho__menu__link {
   padding: 2rem;
   text-decoration: none;
+}
+
+.main-content {
+  margin: 0 auto;
+  padding: 3rem;
 }
