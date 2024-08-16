@@ -12,15 +12,15 @@
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="projects.html">Projetos</a>
+            <a class="cabecalho__menu__link" href="#Home">Home</a>
+            <a class="cabecalho__menu__link" href="#SobreMim">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="#Projetos">Projetos</a>
         </nav>
     </header>
     
     <main class="main-content">
 
-        <section class="apresentacao" #Home>
+        <section class="apresentacao" id="Home">
             <div class="apresentacao__conteudo">
                 <h1 class="apresentacao__conteudo__titulo">Transforme suas ideias em realidade digital<strong 
                 class="titulo-destaque"> com um Front-end de qualidade!
@@ -43,8 +43,8 @@
             <img class="apresentacao__imagem" src="assets/Imagem.svg" alt="Foto da Ana Paula Berigo">
         </section>
 
-        <section class="apresentacao" #SobreMin>
-            <section class="apresentacao__conteudo">
+        <section class="apresentacao" id="SobreMim">
+            <div class="apresentacao__conteudo">
                 <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
                 <p class="apresentacao__conteudo__texto">
                     Graduada em Ciência da Computação pelo Centro Universitário de Formiga, Técnica em Informática pelo SENAI Euvaldo Lodi e Técnica em Redes pelo SENAC/MG. Atualmente, sou Analista de Desenvolvimento na Aditek, onde acumulei experiência significativa em HTML5, CSS3, JavaScript, React.js, Angular, Flutter, React Native, Bootstrap, MySQL e Figma. Meu interesse se estende ao Desenvolvimento de Games, Mobile e Design de Interfaces.
@@ -66,7 +66,11 @@
                     Acredito no poder transformador da tecnologia e estou sempre em busca de novas oportunidades para aprender, crescer e contribuir para um futuro melhor.
                 </p>
                 
-            </section>
+            </div>
+        </section>
+
+        <section class="apresentacao" id="Projetos">
+            
         </section>
   
         <div class="slider" style="--quantity: 10">
