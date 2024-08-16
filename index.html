@@ -1,112 +1,155 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio</title>
     <!-- <link rel="stylesheet" href="./styles/style.css"> -->
-    <link rel="stylesheet" href="./styles/style copy.css">
-</head>
+    <link rel="stylesheet" href="./styles/style copy.css" />
+  </head>
 
-<body>
+  <body>
     <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="#Home">Home</a>
-            <a class="cabecalho__menu__link" href="#SobreMim">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="#Projetos">Projetos</a>
-        </nav>
+      <nav class="cabecalho__menu">
+        <a class="cabecalho__menu__link" href="#Home">Home</a>
+        <a class="cabecalho__menu__link" href="#SobreMim">Sobre mim</a>
+        <a class="cabecalho__menu__link" href="#Projetos">Projetos</a>
+      </nav>
+      <nav class="curriculo">
+        <a class="cabecalho__menu__link" href="#">Curriculo</a>
+      </nav>
+      <div class="menu-hamburguer">
+
+      </div>
     </header>
-    
-    <main class="main-content">
-        <!-- Inicio - HOME -->
-        <section class="apresentacao main-content__container" id="Home">
-            <div class="apresentacao__conteudo">
-                <h1 class="apresentacao__conteudo__titulo">Transforme suas ideias em realidade digital<strong 
-                class="titulo-destaque"> com um Front-end de qualidade!
-                </strong></h1>
-                <p class="apresentacao__conteudo__texto">Olá! Sou a Ana Paula Berigo, desenvolvedora
-                Front-end com especialidade em Reactjs, React Native, Flutter, JavaScript, Angular, Figma, HTML5, CSS3 e Styled Components. Vamos
-                conversar?</p>
-                <div class="apresentacao__links">
-                    <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
-                    <a class="apresentacao__links__navegacao" href="https://github.com/AnaBerigo">
-                    <img src="assets/github.png" alt="Ícone do GitHub">
-                        GitHub
-                    </a>
-                    <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/anaberigo/">
-                        <img src="assets/linkedin.png" alt="Ícone do LinkedIn">
-                        LinkedIn
-                    </a>
-                </div>
-            </div>
-            <img class="apresentacao__imagem" src="assets/Imagem.svg" alt="Foto da Ana Paula Berigo">
-        </section>
-        <!-- Fim - HOME -->
 
-        <!-- Inicio - SOBRE MIM -->
-        <section class="apresentacao main-content__container" id="SobreMim">
-            <div class="apresentacao__conteudo">
-                <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
-                <p class="apresentacao__conteudo__texto">
-                    Graduada em Ciência da Computação pelo Centro Universitário de Formiga, Técnica em Informática pelo SENAI Euvaldo Lodi e Técnica em Redes pelo SENAC/MG. Atualmente, sou Analista de Desenvolvimento na Aditek, onde acumulei experiência significativa em HTML5, CSS3, JavaScript, React.js, Angular, Flutter, React Native, Bootstrap, MySQL e Figma. Meu interesse se estende ao Desenvolvimento de Games, Mobile e Design de Interfaces.
-                </p>
-    
-                <p class="apresentacao__conteudo__texto">
-                    Minha jornada profissional tem sido marcada pelo desejo constante de melhorar e facilitar a vida das pessoas, inovando e trazendo qualidade ao cotidiano de indivíduos em todo o mundo. Cada dia é uma oportunidade para expandir minha base de conhecimento e alcançar meus objetivos.
-                </p>
-                
-                <p class="apresentacao__conteudo__texto">
-                    Além do desenvolvimento, tenho um forte interesse em criar soluções que impactem positivamente a experiência do usuário, sempre buscando aprimorar minhas habilidades em design e usabilidade. Minha abordagem é sempre hands on, focada em entregar resultados práticos e eficazes.
-                </p>
-    
-                <p class="apresentacao__conteudo__texto">
-                    Estou comprometida com a inovação e a excelência, dedicando-me a projetos que não apenas atendem às necessidades dos usuários, mas que também superam suas expectativas. Apaixonada por tecnologia e desenvolvimento, procuro sempre unir propósito e resultado em todas as minhas iniciativas.
-                </p>
-    
-                <p class="apresentacao__conteudo__texto">
-                    Acredito no poder transformador da tecnologia e estou sempre em busca de novas oportunidades para aprender, crescer e contribuir para um futuro melhor.
-                </p>
-                
-            </div>
-        </section>
-        <!-- Fim - SOBRE MIM -->
-
-        <!-- Inicio - PROJETOS -->
-        <section class="apresentacao main-content__container" id="Projetos">
-            <div>
-                Aqui estão alguns projetos:
-            </div>
-        </section>
-        <!-- Fim - PROJETOS -->
-
-  
-        <!-- Inicio - SLIDER DE SKILLS -->
-        <div class="slider main-content__container" style="--quantity: 10">
-            <div class="carrossel">
-                <div class="item" style="--delay: 1s"><img src="./assets/github.png" alt="logo"></div>
-                <div class="item" style="--delay: 2s"><img src="./assets/github.png" alt="logo"></div>
-                <div class="item" style="--delay: 3s"><img src="./assets/github.png" alt="logo"></div>
-                <div class="item" style="--delay: 4s"><img src="./assets/github.png" alt="logo"></div>
-                <div class="item" style="--delay: 5s"><img src="./assets/github.png" alt="logo"></div>
-                <div class="item" style="--delay: 6s"><img src="./assets/github.png" alt="logo"></div>
-                <div class="item" style="--delay: 7s"><img src="./assets/github.png" alt="logo"></div>
-                <div class="item" style="--delay: 8s"><img src="./assets/github.png" alt="logo"></div>
-                <div class="item" style="--delay: 9s"><img src="./assets/github.png" alt="logo"></div>
-                <div class="item" style="--delay: 10s"><img src="./assets/github.png" alt="logo"></div>
-            </div>
+    <main>
+      <!-- Inicio - HOME -->
+      <section class="apresentacao" id="Home">
+        <div class="apresentacao__conteudo">
+          <h1 class="apresentacao__conteudo__titulo">
+            Transforme suas ideias em realidade digital<strong
+              class="titulo-destaque"
+            >
+              com um Front-end de qualidade!
+            </strong>
+          </h1>
+          <p class="apresentacao__conteudo__texto">
+            Olá! Sou a Ana Paula Berigo, desenvolvedora Front-end com
+            especialidade em <strong class="titulo-destaque">Reactjs</strong>,
+            <strong class="titulo-destaque">React Native</strong>,
+            <strong class="titulo-destaque">Flutter</strong>,
+            <strong class="titulo-destaque">JavaScript</strong>,
+            <strong class="titulo-destaque">Angular</strong>,
+            <strong class="titulo-destaque">Figma</strong>,
+            <strong class="titulo-destaque">HTML5</strong>,
+            <strong class="titulo-destaque">CSS3</strong> e
+            <strong class="titulo-destaque">Styled Components</strong>. Vamos
+            conversar?
+          </p>
+          <div class="apresentacao__links">
+            <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
+            <a
+              class="apresentacao__links__navegacao"
+              href="https://github.com/AnaBerigo"
+            >
+              <img src="assets/github.png" alt="Ícone do GitHub" />
+              GitHub
+            </a>
+            <a
+              class="apresentacao__links__navegacao"
+              href="https://www.linkedin.com/in/anaberigo/"
+            >
+              <img src="assets/linkedin.png" alt="Ícone do LinkedIn" />
+              LinkedIn
+            </a>
+          </div>
         </div>
-        <!-- Fim - SLIDER DE SKILLS -->
+        <img
+          class="apresentacao__imagem"
+          src="assets/Imagem.svg"
+          alt="Foto da Ana Paula Berigo"
+        />
+      </section>
+      <!-- Fim - HOME -->
 
+      <!-- Inicio - SOBRE MIM -->
+      <section class="apresentacao" id="SobreMim">
+        <div class="apresentacao__conteudo">
+          <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
+          <p class="apresentacao__conteudo__texto">
+            Graduada em Ciência da Computação pelo Centro Universitário de
+            Formiga, Técnica em Informática pelo SENAI Euvaldo Lodi e Técnica em
+            Redes pelo SENAC/MG. Atualmente, sou Analista de Desenvolvimento na
+            Aditek, onde acumulei experiência significativa em HTML5, CSS3,
+            JavaScript, React.js, Angular, Flutter, React Native, Bootstrap,
+            MySQL e Figma. Meu interesse se estende ao Desenvolvimento de Games,
+            Mobile e Design de Interfaces.
+          </p>
 
+          <p class="apresentacao__conteudo__texto">
+            Minha jornada profissional tem sido marcada pelo desejo constante de
+            melhorar e facilitar a vida das pessoas, inovando e trazendo
+            qualidade ao cotidiano de indivíduos em todo o mundo. Cada dia é uma
+            oportunidade para expandir minha base de conhecimento e alcançar
+            meus objetivos.
+          </p>
+
+          <p class="apresentacao__conteudo__texto">
+            Acredito no poder transformador da tecnologia e estou sempre em
+            busca de novas oportunidades para aprender, crescer e contribuir
+            para um futuro melhor.
+          </p>
+        </div>
+      </section>
+      <!-- Fim - SOBRE MIM -->
+
+      <!-- Inicio - PROJETOS -->
+      <section class="apresentacao" id="Projetos">
+        <div>Aqui estão alguns projetos:</div>
+      </section>
+      <!-- Fim - PROJETOS -->
+
+      <!-- Inicio - SLIDER DE SKILLS -->
+      <div class="slider" style="--quantity: 10">
+        <div class="carrossel">
+          <div class="item" style="--delay: 1s">
+            <img src="./assets/github.png" alt="logo" />
+          </div>
+          <div class="item" style="--delay: 2s">
+            <img src="./assets/github.png" alt="logo" />
+          </div>
+          <div class="item" style="--delay: 3s">
+            <img src="./assets/github.png" alt="logo" />
+          </div>
+          <div class="item" style="--delay: 4s">
+            <img src="./assets/github.png" alt="logo" />
+          </div>
+          <div class="item" style="--delay: 5s">
+            <img src="./assets/github.png" alt="logo" />
+          </div>
+          <div class="item" style="--delay: 6s">
+            <img src="./assets/github.png" alt="logo" />
+          </div>
+          <div class="item" style="--delay: 7s">
+            <img src="./assets/github.png" alt="logo" />
+          </div>
+          <div class="item" style="--delay: 8s">
+            <img src="./assets/github.png" alt="logo" />
+          </div>
+          <div class="item" style="--delay: 9s">
+            <img src="./assets/github.png" alt="logo" />
+          </div>
+          <div class="item" style="--delay: 10s">
+            <img src="./assets/github.png" alt="logo" />
+          </div>
+        </div>
+      </div>
+      <!-- Fim - SLIDER DE SKILLS -->
     </main>
 
-    <footer class="rodape">
-        Desenvolvido por Ana Berigo.
-    </footer>
+    <footer class="rodape">Desenvolvido por Ana Berigo.</footer>
 
     <!-- <script src="script.js"></script> -->
-    
-</body>
-
+  </body>
 </html>
