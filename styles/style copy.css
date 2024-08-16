@@ -38,5 +38,13 @@ body {
 
 .main-content {
   margin: 0 auto;
-  padding: 3rem;
+  padding: 5rem;
+}
+
+.main-content__container {
+  padding: 0 0 5rem 0;
+}
+
+.apresentacao {
+  display: flex;
 }
