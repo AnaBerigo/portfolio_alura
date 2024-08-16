@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
 
 :root {
+  --cor-primaria: #000000;
   --cor-secundaria: #f6f6f6;
   --cor-terciaria: #22d4fd;
-  --cor-degrade-fundo-primeira: #0a4653;
-  --cor-degrade-fundo-segunda: #000000;
+  --cor-quaternaria: #0a4653;
 
   --fonte-primaria: "Krona One", sans-serif;
   --fonte-secundaria: "Montserrat", sans-serif;
@@ -18,10 +18,7 @@
 }
 
 body {
-  background: linear-gradient(
-    var(--cor-degrade-fundo-segunda),
-    var(--cor-degrade-fundo-primeira)
-  );
+  background: linear-gradient(var(--cor-primaria), var(--cor-quaternaria));
   color: var(--cor-secundaria);
 }
 
