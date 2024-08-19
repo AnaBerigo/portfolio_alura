@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
 :root {
   --cor-primaria: #000000;
   --cor-secundaria: #f6f6f6;
   --cor-terciaria: #22d4fd;
   --cor-quaternaria: #0a4653;
+
+  --cor-primaria-clear: #6a6a6a;
+  --cor-secundaria-clear: #ffffff;
+  --cor-terciaria-clear: #8de7ff;
+  --cor-quaternaria-clear: #3a7385;
 
   --fonte-primaria: "Krona One", sans-serif;
   --fonte-secundaria: "Montserrat", sans-serif;
@@ -40,6 +46,11 @@ body {
   gap: 2rem;
 }
 
+.cabecalho__menu__direita {
+  display: flex;
+  gap: 2rem;
+}
+
 .cabecalho__menu__link {
   color: var(--cor-terciaria);
   text-align: end;
@@ -48,6 +59,54 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
 }
+
+/* BOTÃO ALTERAR TEMA */
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: var(--cor-quaternaria);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5);
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+/* ********************************************************************** */
 
 .apresentacao {
   /* width: 100%; */
@@ -150,6 +209,37 @@ body {
 
 .item img {
   height: 100%;
+}
+
+/* .item i {
+  font-size: 3.13rem;
+} */
+
+/* MUDANÇA DE COR DARK */
+
+body.clear {
+  background: linear-gradient(
+    var(--cor-primaria-clear),
+    var(--cor-quaternaria-clear)
+  );
+  color: var(--cor-secundaria-clear);
+}
+
+.cabecalho__menu__link.clear {
+  color: var(--cor-terciaria-clear);
+}
+
+.titulo-destaque.clear {
+  color: var(--cor-terciaria-clear);
+}
+
+.apresentacao__links__navegacao.clear {
+  border: 2px solid var(--cor-terciaria-clear);
+  color: var(--cor-secundaria-clear);
+}
+
+.apresentacao__links__navegacao.clear:hover {
+  background-color: var(--cor-quaternaria-clear);
 }
 
 @keyframes slide {

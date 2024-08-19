@@ -1,3 +1,5 @@
+/* ********************* EFEITO ESTRELAS BACKGROUND ********************* */
+
 // Define o número de estrelas
 const numberOfStars = 100;
 
@@ -29,3 +31,19 @@ for (let i = 0; i < numberOfStars; i++) {
   // Adiciona a estrela ao container
   container.appendChild(star);
 }
+
+/* ********************* BOTÃO DE ALTERAR TEMA ********************* */
+
+const chk = document.getElementById("chk");
+const cabecalhoMenuLink = document.querySelectorAll(".cabecalho__menu__link");
+const tituloDestaque = document.querySelectorAll(".titulo-destaque");
+const apresentacaoLinksNavegacao = document.querySelectorAll(
+  ".apresentacao__links__navegacao"
+);
+
+chk.addEventListener("change", () => {
+  document.body.classList.toggle("clear");
+  cabecalhoMenuLink.forEach((link) => link.classList.toggle("clear"));
+  tituloDestaque.forEach((titulo) => titulo.classList.toggle("clear"));
+  apresentacaoLinksNavegacao.forEach((nav) => nav.classList.toggle("clear"));
+});

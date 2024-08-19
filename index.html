@@ -6,17 +6,27 @@
     <title>Portfólio</title>
     <!-- <link rel="stylesheet" href="./styles/style.css"> -->
     <link rel="stylesheet" href="./styles/style copy.css" />
+    <!-- ICONES -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
 
   <body>
     <header class="cabecalho">
       <nav class="cabecalho__menu">
-        <a class="cabecalho__menu__link" href="#Home">Home</a>
         <a class="cabecalho__menu__link" href="#SobreMim">Sobre mim</a>
         <a class="cabecalho__menu__link" href="#Projetos">Projetos</a>
       </nav>
-      <nav class="curriculo">
+      <nav class="cabecalho__menu__direita">
         <a class="cabecalho__menu__link" href="https://www.linkedin.com/ambry/?x-li-ambry-ep=AQL4fjuUqhSL8wAAAZFcDFIPe1KukiPBN8mVCEPrVgx2AWiuCTi64qhH-dMWCGtV-GRqrXvjy_IclB2VsOLt_LMRYa13_EVpTJLBATs7O4hhH8gnCUKaVUBfya58elsMAyyVfGub5UzJgve2ZMk-YiCJb6XO5A1c6N7QEglSc7hvARoUL2Of4ZEs3XRJdJOW5aDBptuJuXq0r0M0RzQgTFkX04WjefkmbkNVBtpJOTpVYinZRSJhOdTn5DteM-QQOwSaerA_gi9heZg5UGjYZwyRa30-0zg4no6P7z1S32fmsz0khY0-tsMoa9dYcSCKfiqSiVoiTg5AfLSwVUsZNud1h7Vo_1U5_IfiRC2sOQx821ChMRJ14ji2iXZluYDp_pB4WWswqp9_NQyjttWt5IheMKv0VB6vmHL2PNL0AjGv6RgNT8ekFJBtG6CrV8eBG4M0FKBXfvDqnB9R5wzMhkNHd03uR_aJMEU-oVX4a93-_uT5zphBkh-Ig2q7PRZ_cjRnS69y-LDpoLxaOGTF_dVfTngx9Tz3Q0gXdZUZfxNDApxpI8xzuNZ1QeQxilKQZO9pMQ&x-ambry-um-filename=Profile.pdf" >Curriculo</a>
+        <div>
+          <input type="checkbox" class="checkbox" id="chk" />
+          <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+          </label>
+        </div>
       </nav>
       <div class="menu-hamburguer">
 
@@ -25,9 +35,9 @@
 
     <main>
       <!-- Inicio - HOME -->
-      <section class="apresentacao" id="Home">
+      <section class="apresentacao">
         <div class="apresentacao__conteudo">
-          <h1 class="apresentacao__conteudo__titulo">
+          <h1 class="apresentacao__conteudo__titulo" id="SobreMim">
             Criando experiências digitais para o <strong
               class="titulo-destaque"
             >
@@ -85,32 +95,41 @@
         <div class="carrossel">
           <div class="item" style="--delay: 1s">
             <img src="./assets/html5.svg" alt="Icone HTML do Icons8" />
+            <!-- <i class="fa-brands fa-html5"></i> -->
           </div>
           <div class="item" style="--delay: 2s">
             <img src="./assets/css3.svg" alt="logo" />
+            <!-- <i class="fa-brands fa-css3-alt"></i> -->
           </div>
           <div class="item" style="--delay: 3s">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png?20220125121207" alt="logo" />
+            <!-- <i class="fa-brands fa-react"></i> -->
           </div>
           <div class="item" style="--delay: 4s">
             <img src="https://seeklogo.com/images/A/angular-icon-logo-5FC0C40EAC-seeklogo.com.png" alt="logo" />
+            <!-- <i class="fa-brands fa-angular"></i> -->
           </div>
           <div class="item" style="--delay: 5s">
             <img src="https://www.svgrepo.com/show/353751/flutter.svg" alt="logo" />
+            <!-- <i class="fa-brands fa-flutter"></i> -->
           </div>
           <div class="item" style="--delay: 6s">
             <img src="./assets/styled-components.png" alt="logo" />
           </div>
           <div class="item" style="--delay: 7s">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/512px-Sass_Logo_Color.svg.png?20150315202757" alt="logo" />
+            <!-- <i class="fa-brands fa-sass"></i> -->
           </div>
           <div class="item" style="--delay: 8s">
             <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/figma-icon.png" alt="logo" />
+            <!-- <i class="fa-brands fa-figma"></i> -->
           </div>
           <div class="item" style="--delay: 9s">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201" alt="logo" />
+            <!-- <i class='bx bxl-typescript'></i> -->
           </div>
           <div class="item" style="--delay: 10s">
+            <!-- <i class="fa-brands fa-git-alt"></i> -->
             <img src="https://book.git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="logo" />
           </div>
         </div>
@@ -127,6 +146,6 @@
 
     <footer class="rodape">Desenvolvido por Ana Berigo.</footer>
 
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
   </body>
 </html>
