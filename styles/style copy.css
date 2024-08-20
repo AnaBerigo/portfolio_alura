@@ -31,14 +31,12 @@ body {
   overflow-x: hidden !important;
 }
 
+/* ************************ CABECALHO DO PORTFOLIO ************************ */
+
 .cabecalho {
   display: flex;
   padding: 2rem 5rem;
   justify-content: space-between;
-}
-
-.hamburguer {
-  display: none;
 }
 
 .cabecalho__menu {
@@ -61,7 +59,63 @@ body {
   font-weight: 600;
 }
 
-/* BOTÃO ALTERAR TEMA */
+.hamburguer {
+  display: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container__imagem {
+  padding: 1rem;
+}
+
+.lista-menu {
+  font-family: var(--fonte-secundaria);
+  font-size: 1.25rem;
+  font-weight: 400;
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 60vw;
+  background: linear-gradient(var(--cor-primaria), var(--cor-quaternaria));
+  border-radius: 10px;
+}
+
+.container__botao:checked ~ .lista-menu {
+  /* Se o container__botao estiver marcado então ele faz o que tiver pedido (display: block) */
+  display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+  padding: 1em;
+}
+
+.lista-menu__link {
+  text-decoration: none;
+  color: var(--cor-secundaria);
+}
+
+.container__botao {
+  display: none;
+}
+
+.cabecalho__menu-hamburguer {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("https://github.com/user-attachments/assets/b205462f-eb93-41c2-9a2a-a2baa83b2b8b");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+/* ********************************************************************** */
+
+/* ************************ BOTÃO ALTERAR TEMA ************************ */
 
 .checkbox {
   opacity: 0;
@@ -108,6 +162,8 @@ body {
 }
 
 /* ********************************************************************** */
+
+/* ************************ CORPO DO PORTFOLIO ************************ */
 
 .apresentacao {
   /* width: 100%; */
@@ -178,9 +234,17 @@ body {
   width: 50%;
 }
 
+/* ********************************************************************** */
+
+/* ************************ RODAPÉ DO PORTFOLIO ************************ */
+
 .rodape {
   padding-top: 7%;
 }
+
+/* ********************************************************************** */
+
+/* ************************ SLIDER DE SKILLS ************************ */
 
 .slider {
   width: 100vw;
@@ -221,7 +285,18 @@ body {
   font-size: 3.13rem;
 }
 
-/* MUDANÇA DE COR DARK */
+@keyframes slide {
+  from {
+    left: 100vw;
+  }
+  to {
+    left: -50vw;
+  }
+}
+
+/* ********************************************************************** */
+
+/* ************************ MUDANÇA DE COR DARK ************************ */
 
 body.clear {
   background: linear-gradient(
@@ -248,14 +323,9 @@ body.clear {
   background-color: var(--cor-quaternaria-clear);
 }
 
-@keyframes slide {
-  from {
-    left: 100vw;
-  }
-  to {
-    left: -50vw;
-  }
-}
+/* ********************************************************************** */
+
+/* ************************ TABLET OU MONITORES MENORES ************************ */
 
 @media screen and (max-width: 900px) {
   .apresentacao {
@@ -272,13 +342,36 @@ body.clear {
   }
 }
 
+/* ********************************************************************** */
+
+/* ************************ CELULARES ************************ */
+
 @media screen and (max-width: 692px) {
   .cabecalho {
     display: none;
   }
 
   .hamburguer {
-    display: block;
+    margin: 1rem 0 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .label {
+    background-color: transparent;
+    border-radius: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+
+    padding: 0;
+    position: initial;
+    height: 0;
+    width: 0;
+    transform: none;
   }
 
   .apresentacao {

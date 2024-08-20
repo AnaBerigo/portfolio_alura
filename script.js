@@ -35,6 +35,7 @@ for (let i = 0; i < numberOfStars; i++) {
 /* ********************* BOTÃO DE ALTERAR TEMA ********************* */
 
 const chk = document.getElementById("chk");
+const temaTexto = document.getElementById("tema-texto");
 const cabecalhoMenuLink = document.querySelectorAll(".cabecalho__menu__link");
 const tituloDestaque = document.querySelectorAll(".titulo-destaque");
 const apresentacaoLinksNavegacao = document.querySelectorAll(
@@ -46,4 +47,12 @@ chk.addEventListener("change", () => {
   cabecalhoMenuLink.forEach((link) => link.classList.toggle("clear"));
   tituloDestaque.forEach((titulo) => titulo.classList.toggle("clear"));
   apresentacaoLinksNavegacao.forEach((nav) => nav.classList.toggle("clear"));
+
+  if (chk.checked) {
+    temaTexto.innerHTML =
+      '<i class="fas fa-moon" style="padding-right:10px"></i> Tema escuro';
+  } else {
+    temaTexto.innerHTML =
+      '<i class="fas fa-sun" style="padding-right:10px"></i> Tema claro';
+  }
 });
