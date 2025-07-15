@@ -1,6 +1,6 @@
 # Meu Portfólio
 
-Este é o meu projeto de portfólio desenvolvido durante o curso de HTML da Alura. Após o curso, pretendo melhorá-lo e utilizá-lo como meu portfólio oficial.
+Este é o meu projeto de portfólio desenvolvido durante o curso de HTML da Alura.
 
 ## Descrição
 
